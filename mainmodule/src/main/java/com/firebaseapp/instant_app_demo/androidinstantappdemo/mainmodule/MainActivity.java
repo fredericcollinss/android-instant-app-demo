@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.trustcircle.internetmodule.InternetActivity;
+import com.trustcircle.permissionmodule.PermissionActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(i);
 //            }
 //        });
-//
-//        mPermissionRequestButton = (Button) findViewById(R.id.permission_module_button);
-//        mPermissionRequestButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent i = new Intent(MainActivity.this, PermissionActivity.class);
-//                startActivity(i);
-//            }
-//        });
+
+        mPermissionRequestButton = (Button) findViewById(R.id.permission_module_button);
+        mPermissionRequestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, PermissionActivity.class);
+                startActivity(i);
+            }
+        });
 
         mInternetAccessButton = findViewById(R.id.internet_access_module_button);
         mInternetAccessButton.setOnClickListener(new View.OnClickListener() {

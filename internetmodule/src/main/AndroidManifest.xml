@@ -12,7 +12,7 @@
 
             <meta-data
                 android:name="default-url"
-                android:value="https://instant-app-demo.firebaseapp.com/" />
+                android:value="https://instant-app-demo.firebaseapp.com/main" />
 
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />

@@ -8,4 +8,8 @@
     <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://instant-app-demo.firebaseapp.com\",\n  }\n}]</string>
     <string name="open_permission_text">go to permission module</string>
     <string name="open_internet_text">go to internet access module</string>
+    <string name="permission_request_entry">This activity requests permission at runtime</string>
+    <string name="request_camera_permission_text">request camera</string>
+    <string name="request_location_permission_text">request location</string>
+    <string name="request_read_phone_number_text">request phone number (only Android O)</string>
 </resources>
