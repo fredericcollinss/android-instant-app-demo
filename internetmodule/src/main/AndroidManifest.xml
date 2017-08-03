@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.trustcircle.internetmodule">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity android:name=".InternetActivity">
+
+            <tools:validation testUrl="https://instant-app-demo.firebaseapp.com/internet" />
+
+            <meta-data
+                android:name="default-url"
+                android:value="https://instant-app-demo.firebaseapp.com/" />
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"/>
+                <data
+                    android:scheme="http"
+                    android:host="instant-app-demo.firebaseapp.com"
+                    android:pathPrefix="/internet" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http"/>
+                <data
+                    android:scheme="https"
+                    android:host="instant-app-demo.firebaseapp.com"
+                    android:pathPrefix="/internet" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

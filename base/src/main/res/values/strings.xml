@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Instant App Demo</string>
+    <string name="recycler_view_label">Recycler View Module</string>
+    <string name="main_entry_text">This is the main entry</string>
+    <string name="open_listview_text">go to list view</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://instant-app-demo.firebaseapp.com\",\n  }\n}]</string>
+    <string name="open_permission_text">go to permission module</string>
+    <string name="open_internet_text">go to internet access module</string>
+</resources>
